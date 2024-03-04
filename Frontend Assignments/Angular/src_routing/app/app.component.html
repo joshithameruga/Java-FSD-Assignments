@@ -1,0 +1,15 @@
+
+<h1> routing component in app component </h1>
+
+<a routerLink="/home">Home</a> <br>
+
+<button type="submit" routerLink="/contactus/{{username}}"> call us</button>   <!--  for contact us -->
+
+<ul>
+
+<li><a routerLink="/aboutus" [queryParams]='addressJson'> about us </a> </li>   <!-- path name and the link anme here should be same-->
+
+<li><a routerLink=""> back to home</a> </li> 
+</ul>
+
+<router-outlet></router-outlet>

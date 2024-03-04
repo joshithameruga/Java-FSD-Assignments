@@ -1,0 +1,9 @@
+<p>mycounter works!</p>
+
+<button (click)="doIncrement()">Increment</button>
+
+<h1>Current Count: {{ mycount | async }}</h1> <!--async will help us to wait until we get data-->
+
+<button (click)="doDecrement()">Decrement</button>
+
+<button (click)="doReset()">Reset Counter</button>

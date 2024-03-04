@@ -1,0 +1,8 @@
+{"products": [
+
+
+    {"id":1,"name":"mobiles","price":12000},
+    {"id":2,"name":"laptop","price":42000},
+    {"id":3,"name":"smart watch","price":9000},
+    {"id":4,"name":"airdopes","price":10000}]
+}

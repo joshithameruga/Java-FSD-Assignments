@@ -1,0 +1,20 @@
+<h1 *ngIf="false"> hello friends</h1>
+<h2 *ngIf="5>3" > bye friends</h2>
+
+Enter Tech: <input type="text" [(ngModel)]="Tech">
+<div [ngSwitch]="Tech">
+  <div *ngSwitchCase="'java'"><img src="../assets/Java-Logo.png" alt="java">   </div>
+  <div *ngSwitchCase="'python'"> <img src="../assets/Python-Logo.png" alt="python"> </div>
+  <div *ngSwitchDefault>no tech selected</div>
+
+</div>
+
+<div *ngFor="let i of arr; let j =index">welcome {{i}} index{{j}}</div>
+
+
+<h2 [ngStyle]="{'color':textcolor,'background-color':bgcolor}"> this is css</h2>
+
+
+<h1 [ngClass]="isSpecial ? 'cls1':'cls2' "> ngClass this is!</h1>
+
+<h1 ngNonBindable >hello {{isSpecial}}</h1>  

@@ -1,0 +1,27 @@
+<p>add-customer works!</p>
+
+
+
+<h2>Customer List</h2>
+<div class="container col-md-4">
+<form  (submit)="addCustomer()">
+
+<input type="text" placeholder="enter first name" class="form-control" name="newfirstName"  [(ngModel)]="newfirstName"> 
+<input type="text" placeholder="enter last name" class="form-control" name="newlastName"  [(ngModel)]="newlastName"> 
+<input type="text" placeholder="enter email " class="form-control" name="newemailAddress"  [(ngModel)]="newemailAddress"> 
+<input type="text" placeholder="enter phone number" class="form-control" name="newphoneNumber"  [(ngModel)]="newphoneNumber"> 
+<input type="text" placeholder="enter username" class="form-control" name="newusername"  [(ngModel)]="newusername"> 
+<input type="password" placeholder="enter password" class="form-control" name="newpassword"  [(ngModel)]="newpassword"> 
+<button type="submit" class="btn btn-success">Add</button>
+
+
+</form>
+
+<ul>
+    <li *ngFor="let customer of customerList">
+     
+      {{customer.customerId}} {{ customer.firstName }} {{ customer.lastName }} {{ customer.emailAddress }} {{customer.phoneNumber}} {{customer.username}} {{customer.password}}
+      <button type="button" (click)="deleteCustomer(customer.customerId)" class="btn btn-danger"> Delete </button>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,173 @@
+
+input[type=text] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 5px 0 ;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=date] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0 ;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+  #country {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0 ;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.left{
+  float:left;
+  width: 50%;
+}
+
+.right{
+  float: right;
+  width: 50%;
+}
+
+.outerlayout{
+
+  width: 50%;
+  height: 100vh;
+  background-color: #2697f3; 
+  padding: 40px; 
+  margin:0 auto;
+  overflow: auto;
+
+}
+
+.innerlayout{
+
+  width: 70%; 
+  height: 80vh;
+  margin: auto; 
+  background-color: white; 
+  padding: 60px ; 
+  border: 1px solid white;
+  overflow: auto;
+  border: 1px solid #ccc;
+    border-radius: 7px;
+  
+}
+
+h1{
+ text-align: center;
+
+}
+
+button[type="button"]{
+  background-color: #1681d8;
+  color: rgb(255, 255, 255);
+  width: 50%; 
+  padding: 20px;
+  margin-top :60px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+ 
+
+
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+
+}
+
+.login-form h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  background-image: linear-gradient(to right,#751aff,#c61aff);
+  color: #fff;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: block; 
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+.form-group .remember .forgot {
+  text-align: center;
+  
+  }
+.form-group .remember .forgot {
+display: inline-block;
+margin-right: 10px;
+
+}
+
+
+
+.signup {
+  text-align: center;
+}
+
+.signup p,
+.signup a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  width: 100%; 
+  padding: 20px 20px;
+  border: none;
+  border-radius: 50px;
+  background-image: linear-gradient(to right,#751aff,#c61aff);
+  color: #fff;
+  cursor: pointer;
+  display: block; 
+  margin: 0 auto; 
+}
+
+

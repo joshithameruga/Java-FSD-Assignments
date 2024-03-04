@@ -1,0 +1,12 @@
+welcome : {{username}}
+
+<form style="background-color:aqua">
+  oneway data binding : <input type="text" name="uname" [value]=username /> <br>
+
+  twoway data binding : <input type="text" name="uname" [(ngModel)]=username /> <br>
+
+
+  <img [src]=imageURL alt="hero pavan kalyan image">  <br>
+
+  <button type="button" (click)="getData()">get</button>
+</form>
