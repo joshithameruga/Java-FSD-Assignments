@@ -1,0 +1,40 @@
+<div class="container">
+    <h3>Cricket Management System</h3>
+    <form #myform="ngForm"  (ngSubmit)="updatePlayer(myform.value)">
+  
+      <label for="playerId">Player ID</label>
+      <input type="number"   #idcontrol="ngModel" id="playerId" name="playerId" placeholder="Enter player ID" required ngModel><br>
+      <span  style="color: red;"  *ngIf="idcontrol.touched && idcontrol.invalid">PlayerId is Mandatory</span><br>
+  
+      <label for="playerName">Player Name</label>
+      <input type="text" #pnamecontrol="ngModel"  id="playerName" name="playerName" placeholder="Enter player name" required ngModel><br>
+      <span  style="color: red;"  *ngIf="pnamecontrol.touched && pnamecontrol.invalid">PlayerName is Mandatory</span><br>
+  
+      <label for="jerseyNumber">Jersey Number</label>
+      <input type="number"  #jcontrol="ngModel" id="jerseyNumber" name="jerseyNumber" placeholder="Enter jersey number" required ngModel><br>
+      <span  style="color: red;"  *ngIf="jcontrol.touched && jcontrol.invalid">JersyNumber is Mandatory</span><br>
+
+      <label for="role">Role</label>
+      <input type="text"  #rcontrol="ngModel" id="role" name="role" placeholder="Enter role" required ngModel><br>
+      <span  style="color: red;"  *ngIf="rcontrol.touched && rcontrol.invalid">Role is Mandatory</span><br>
+  
+      <label for="totalMatches">Total Matches</label>
+      <input type="number"  #tcontrol="ngModel"  id="totalMatches" name="totalMatches" placeholder="Enter total matches" required ngModel><br>
+      <span  style="color: red;"  *ngIf="tcontrol.touched && tcontrol.invalid">TotalMatches is Mandatory</span><br>
+
+      <label for="teamName">Team Name</label>
+      <input type="text"   #tncontrol="ngModel" id="teamName" name="teamName" placeholder="Enter team name" required ngModel><br>
+      <span  style="color: red;"  *ngIf="tncontrol.touched && tncontrol.invalid">TeamName is Mandatory</span><br>
+
+      <label for="country">Country</label>
+      <input type="text"  #ccontrol="ngModel" id="country" name="country" placeholder="Enter country" required ngModel><br>
+      <span  style="color: red;"  *ngIf="ccontrol.touched && ccontrol.invalid">Country is Mandatory</span><br>
+
+      <label for="description">Description</label>
+      <input type ="text"  #dcontrol="ngModel" id="description" name="description" placeholder="Enter description" required ngModel><br>
+      <span  style="color: red;"  *ngIf="dcontrol.touched && dcontrol.invalid">Description is Mandatory</span><br>
+
+      <button type="submit"  [disabled]="myform.invalid"> Submit </button>
+    </form>
+  </div>
+  
